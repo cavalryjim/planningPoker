@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Selected Card</ion-title>
+    <!-- <ion-buttons end>
+      <button (click)="dismiss()"> Close </button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card (click)="dismiss()">
+    {{ value }}
+  </ion-card>
+</ion-content>
