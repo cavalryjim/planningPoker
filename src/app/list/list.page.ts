@@ -19,7 +19,7 @@ export class ListPage implements OnInit {
 
   onSelect(item) {
     console.log(item);
-    this.cardService.selection = item;
+    this.cardService.setSelection(item);
     // JDavis: navigate back to home
     this.navCtrl.navigateRoot('/home');
   }

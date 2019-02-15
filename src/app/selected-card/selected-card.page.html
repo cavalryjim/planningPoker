@@ -1,14 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Selected Card</ion-title>
-    <!-- <ion-buttons end>
-      <button (click)="dismiss()"> Close </button>
-    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-card (click)="dismiss()">
-    {{ value }}
+    <span *ngIf="card.img==null">{{card.id}}</span>
+    <ion-img *ngIf="card.img!=null" [src]="'assets/'+card.img"></ion-img>
   </ion-card>
 </ion-content>
