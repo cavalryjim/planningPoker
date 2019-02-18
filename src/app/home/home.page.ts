@@ -27,6 +27,7 @@ export class HomePage {
       this.cards = this.cardService.cardValues();
       console.log(this.cards);
     });
+
   }
 
   async onSelected(card) {
